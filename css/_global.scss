@@ -1,0 +1,89 @@
+/* [COLORS] */
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+/* [GENERAL STYLES] */
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.barlow{
+    font-family: 'Barlow', sans-serif;
+}
+.fraunces{
+    font-family: 'Fraunces', serif;
+}
+
+/* [MIXINS] */
+
+@mixin about-content {
+    padding: 100px 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+@mixin row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin about-h1{
+    font-size: 2.5em;
+    color: $very-dark-desaturated-blue;
+    width: 400px;
+    font-weight: 900;
+}
+@mixin about-p{
+    margin: 30px 0;
+    width: 450px;
+    line-height: 25px;
+    font-size: 18px;
+    color: $dark-grayish-blue;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+@mixin about-span{
+    font-weight: 900;
+    font-size: 14px;
+}
+
+@mixin mobile--about-h1{
+    color: $very-dark-desaturated-blue;
+    margin-bottom: 20px;
+    text-align: center;
+}
+@mixin mobile--about-p{
+    text-align: center;
+    margin: 20px 0;
+    color: $dark-grayish-blue;
+    font-weight: 500;
+    line-height: 30px;
+}
+@mixin mobile--about-span{
+    font-weight: 900;
+    font-size: 14px;
+    
+}
